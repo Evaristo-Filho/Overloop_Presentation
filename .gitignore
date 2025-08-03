@@ -22,3 +22,4 @@
     # Other common ignorable files
     *.tmp
     *.userprefs
+/.vs
