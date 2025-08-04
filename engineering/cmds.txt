@@ -1,1 +1,6 @@
+LocalStack:
 docker run --rm -it -p 127.0.0.1:4566:4566 -p 127.0.0.1:4510-4559:4510-4559 localstack/localstack
+
+----------
+SqlServer:
+run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=AaBb123456" -p 1433:1433 --name sql1 --hostname sql1 -d  mcr.microsoft.com/mssql/server:2025-latest
